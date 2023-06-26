@@ -1,3 +1,4 @@
+
 Simple and reliable bot for cryptocurrency trading. Currently, trading is implemented on Binance. The modular architecture was initially designed to allow for the expansion of trading platforms: the core can be integrated with any platform, including the stock market.
 
 To start the bot, simply specify the configuration file:

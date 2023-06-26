@@ -1,4 +1,3 @@
-# The trading pair. The pair should be in the format COIN1_COIN2.
 - pair: BTC_USDT
 
   # The minimum window size for statistical analysis.
