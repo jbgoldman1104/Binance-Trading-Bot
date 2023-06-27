@@ -3,12 +3,6 @@ Simple and reliable bot for cryptocurrency trading. Currently, trading is implem
 
 To start the bot, simply specify the configuration file:
 ```
-export APIKEY=your_api_key
-export SECRETKEY=your_api_secret
-go build
-./marti --config config.yaml
-```
-
 **Configuration:**
 
 This application has a configuration that can be customized using YAML file:
