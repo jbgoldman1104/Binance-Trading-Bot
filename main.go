@@ -3,12 +3,6 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/vadimInshakov/marti/config"
-	"log"
-	"os"
-	"sync/atomic"
-	"time"
-
 	"github.com/pkg/errors"
 	"github.com/vadimInshakov/marti/services/windowfinder"
 
