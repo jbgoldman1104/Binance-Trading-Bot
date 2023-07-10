@@ -1,4 +1,3 @@
-module github.com/vadimInshakov/marti
 
 go 1.20
 
