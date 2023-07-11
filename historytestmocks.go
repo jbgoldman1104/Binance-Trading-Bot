@@ -3,12 +3,6 @@ package main
 import (
 	"github.com/shopspring/decimal"
 	"github.com/vadimInshakov/marti/entity"
-	"github.com/vadimInshakov/marti/services/detector"
-)
-
-type pricerCsv struct {
-	pricesCh chan decimal.Decimal
-}
 
 func (p *pricerCsv) GetPrice(pair entity.Pair) (decimal.Decimal, error) {
 	return <-p.pricesCh, nil
