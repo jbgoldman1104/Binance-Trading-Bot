@@ -3,16 +3,11 @@ package main
 import (
 	"github.com/shopspring/decimal"
 	"github.com/vadimInshakov/marti/entity"
+	"github.com/vadimInshakov/marti/services/detector"
+)
 
-func (p *pricerCsv) GetPrice(pair entity.Pair) (decimal.Decimal, error) {
-	return <-p.pricesCh, nil
-}
-
-type detectorCsv struct {
-	lastaction entity.Action
-	buypoint   decimal.Decimal
-	window     decimal.Decimal
-}
+type pricerCsv struct {
+	pricesCh chan decimal.Decimal
 
 func (d *detectorCsv) NeedAction(price decimal.Decimal) (entity.Action, error) {
 	lastact, err := detector.Detect(d.lastaction, d.buypoint, d.window, price)
