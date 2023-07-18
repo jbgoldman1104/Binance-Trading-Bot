@@ -3,12 +3,6 @@ package main
 import (
 	"encoding/csv"
 	"github.com/shopspring/decimal"
-	"github.com/stretchr/testify/require"
-	"github.com/vadimInshakov/marti/entity"
-	"github.com/vadimInshakov/marti/services"
-	"github.com/vadimInshakov/marti/services/anomalydetector"
-	"github.com/vadimInshakov/marti/services/windowfinder"
-	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"log"
 	"os"

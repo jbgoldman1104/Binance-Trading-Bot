@@ -1,3 +1,4 @@
+package main
 
 import (
 	"github.com/shopspring/decimal"
